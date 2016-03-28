@@ -1,0 +1,47 @@
+AS A USER:
+Bronze
+I want to be able to “click” on a card so that I that i can see what’s behind it and enjoy the game!
+I want to be able to find the mach pairs so that I can track my memory progress.
+I want to reset so that I can have a chance to play again incase I got stuck.
+I want to know if I am matched or unmatched it.
+
+
+Silver
+want be able to have a guide of how to play so that I know how to play.
+I want to have timer so that i can track my timing progress
+As a new user, I would like to confirm my email address so that I can be able to 
+I would like to see welcome my user name so that i know that I signed in correctly.
+
+
+Gold
+I want to see timer so that i can track my progress and know where I am at.
+As a user I want to be able to log in, so that I can access subscriber content
+I want to be able to choose different memory games so that I can choose different games.
+I want to be able to log in, so that I can access subscriber content
+As a user I want to be able share my results with with friends so that I can be entertained.
+As a user, want to be able to save my username and my password so that I can save time.
+
+Pseudocode 
+
+
+WHEN	 user “click” on the card flip over and stay up
+
+THEN 	when user clicked the second card flip it  and compare 
+
+IF	
+    	firstChoice == secondChoice
+				THEN
+	remain flipped and give user a score and continue to click a new card.
+
+ELSE IF 
+	flip back over first and second card 
+	let user rely on his or her memory and try UNTIL all pairs mach.
+
+IF user can mach all the game.
+
+DECLARE 
+	“You won”
+ELSE 
+	“Try again”
+
+/*I am thinking to put user time to finish the game in 60 seconds or lose the game. otherwise the above will be enough for this game.*/
