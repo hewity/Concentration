@@ -1,0 +1,49 @@
+body {
+  background-color: #fff;
+  display: block;
+  margin:8px;
+}
+h1, h3 {
+  text-align: center;
+  margin:auto;
+  text-decoration: none;
+  font-family:Helvetica, inherit;
+  color: #08457e;
+}
+shuffle {
+  margin-left: 50%;
+}
+.cards {
+  padding: 4em 1.5em;
+  border: 1px solid none;
+  width: 6em;
+  height: 2em;
+  margin: 0.1em;
+  text-align: center;
+  float: left;
+  border-radius: 1em;
+  background-color: #6082b6;
+}
+.font {
+  background-color: inherit;
+  width: 180px;
+  height: 180px;
+}
+.board {
+  max-width: 800px;
+  max-height: 800px;
+  margin:auto;
+  border: 5px;
+
+}
+div {
+  display: block;
+}
+/*.flip .card .face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-backfae-visibility: hidden;
+  z-index: 2;
+  font-family: georgia;
+}*/
