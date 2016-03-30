@@ -43,6 +43,31 @@ fivthbox.addEventListener("click", function(){
   var color = fivthbox.getAttribute("name")
   fivthbox.style.backgroundColor = color
 })
+var sixthbox = document.getElementById("5");
+sixthbox.addEventListener("click", function(){
+  var color = sixthbox.getAttribute("name")
+  sixthbox.style.backgroundColor = color
+})
+var seventhbox = document.getElementById("6");
+seventhbox.addEventListener("click", function(){
+  var color = seventhbox.getAttribute("name")
+  seventhbox.style.backgroundColor = color
+})
+var eighthbox = document.getElementById("7");
+eighthbox.addEventListener("click", function(){
+  var color = eighthbox.getAttribute("name")
+  eighthbox.style.backgroundColor = color
+})
+var ninthbox = document.getElementById("8");
+ninthbox.addEventListener("click", function(){
+  var color = ninthbox.getAttribute("name")
+  ninthbox.style.backgroundColor = color
+})
+var tenthbox = document.getElementById("9");
+tenthbox.addEventListener("click", function(){
+  var color = tenthbox.getAttribute("name")
+  tenthbox.style.backgroundColor = color
+})
 
 // 1. 'select' the correct square element
 // var elements = document.querySelectorAll(".cards");
