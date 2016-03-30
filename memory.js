@@ -20,7 +20,28 @@ for (var i = 0; i < cards.length; i++) {
 }
 var firstbox = document.getElementById("0");
 firstbox.addEventListener("click", function() {
-  console.log("Hello");
+  var color = firstbox.getAttribute("name")
+  firstbox.style.backgroundColor = color
+})
+var secondbox = document.getElementById("1");
+secondbox.addEventListener("click", function(){
+  var color = secondbox.getAttribute("name")
+  secondbox.style.backgroundColor = color
+})
+var thirdbox = document.getElementById("2");
+thirdbox.addEventListener("click", function(){
+  var color = thirdbox.getAttribute("name")
+  thirdbox.style.backgroundColor = color
+})
+var forthbox = document.getElementById("3");
+forthbox.addEventListener("click", function(){
+  var color = forthbox.getAttribute("name")
+  forthbox.style.backgroundColor = color
+});
+var fivthbox = document.getElementById("4");
+fivthbox.addEventListener("click", function(){
+  var color = fivthbox.getAttribute("name")
+  fivthbox.style.backgroundColor = color
 })
 
 // 1. 'select' the correct square element
