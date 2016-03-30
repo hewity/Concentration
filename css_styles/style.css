@@ -1,5 +1,5 @@
 body {
-  background-color: #fff;
+  background-color: #B2EBF2;
   display: block;
   margin:8px;
 }
@@ -22,7 +22,7 @@ shuffle {
   text-align: center;
   float: left;
   border-radius: 1em;
-  background-color: #6082b6;
+  background-color: #263238;
 }
 .font {
   background-color: inherit;
@@ -40,10 +40,10 @@ div {
   display: block;
 }
 /*.flip .card .face {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  -webkit-backfae-visibility: hidden;
-  z-index: 2;
-  font-family: georgia;
+width: 100%;
+height: 100%;
+position: absolute;
+-webkit-backfae-visibility: hidden;
+z-index: 2;
+font-family: georgia;
 }*/
