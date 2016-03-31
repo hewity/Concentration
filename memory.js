@@ -1,3 +1,4 @@
+// Make this array two or three lines
 var colors = ["#01579b", "#01579b", "#ff6600", "#ff6600", "#A3E496", "#A3E496", "#303f9f", "#303f9f", "#FFCC33", "#FFCC33", "#C51162", "#C51162", "#33691e", "#33691e", "#CC6699", "#CC6699", "#51041B", "#51041B" , "#3e2723", "#3e2723"];
 
 
@@ -13,6 +14,7 @@ var currentCard;
 
 shuffle(colors);
 
+// For clarity maybe rename function, well written function!!
 function game() {
   for (var i = 0; i < elements.length; i++) {
     elements[i].setAttribute("name", colors[i]);
@@ -25,6 +27,7 @@ game();
 // this.getAttribute("name")
 //
 
+// Maybe divide this into two seperate functions
 function showCard(){
   var bgColor = this.getAttribute("name");
   var id=this.getAttribute("id");
