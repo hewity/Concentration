@@ -13,10 +13,13 @@ var currentCard;
 
 shuffle(colors);
 
-for (var i = 0; i < elements.length; i++) {
-  elements[i].setAttribute("name", colors[i]);
-  elements[i].addEventListener("click", showCard);
+function game() {
+  for (var i = 0; i < elements.length; i++) {
+    elements[i].setAttribute("name", colors[i]);
+    elements[i].addEventListener("click", showCard);
+  }
 }
+game();
 
 // <div name="whatever" id="something">
 // this.getAttribute("name")
@@ -62,12 +65,16 @@ function shuffle(array) {
   }
 }
 
-var resetButton = document.querySelector("#shuffle")
-resetButton.addEventListener("click", resetGame )
+var resetButton = document.querySelector("#shuffle");
+resetButton.addEventListener("click", resetGame );
 
 /// make a function resetGame
-function resetGame()
-console.log("working");
+function resetGame() {
+game();
+document.getElementById(firstCardOfPair).style.background = '#263238';
+document.getElementById(secondCardOfPair).style.background = '#263238';
+}
+
 // step 1: it does nothing but console log
 // step 2: it shuffles cards array (but doesn't change the page)
 // step 3: it re-associates the card elements with the newly shuffled colors
