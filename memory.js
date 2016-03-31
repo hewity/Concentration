@@ -1,12 +1,7 @@
 var colors = ["#01579b", "#01579b", "#ff6600", "#ff6600", "#A3E496", "#A3E496", "#303f9f", "#303f9f", "#FFCC33", "#FFCC33", "#C51162", "#C51162", "#33691e", "#33691e", "#CC6699", "#CC6699", "#51041B", "#51041B" , "#3e2723", "#3e2723"];
 
-var flipCard =[];
-var clicks = 0;
-function shuffleCards(){
-  Array.prototype.shuffle = function(){
 
-  };
-}
+var clicks = 0;
 
 // 1. 'select' the correct square element
 var elements = document.querySelectorAll(".cards");
@@ -15,6 +10,9 @@ var colorOdd;
 var firstCardOfPair;
 var secondCardOfPair;
 var currentCard;
+
+shuffle(colors);
+
 for (var i = 0; i < elements.length; i++) {
   elements[i].setAttribute("name", colors[i]);
   elements[i].addEventListener("click", showCard);
@@ -51,3 +49,26 @@ function showCard(){
   clicks++;
   console.log(clicks);
 }
+
+function shuffle(array) {
+  var i;
+  var j;
+  var temp;
+  for(i = array.length - 1; i > 0; i --){
+    j = Math.floor(Math.random() * i);
+    temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+  }
+}
+
+var resetButton = document.querySelector("#shuffle")
+resetButton.addEventListener("click", resetGame )
+
+/// make a function resetGame
+function resetGame()
+console.log("working");
+// step 1: it does nothing but console log
+// step 2: it shuffles cards array (but doesn't change the page)
+// step 3: it re-associates the card elements with the newly shuffled colors
+// step 4: do any variables need to be reset to default values (e.g. clicks)
