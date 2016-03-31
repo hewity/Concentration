@@ -3,38 +3,58 @@ var colors = ["#01579b", "#01579b", "#ff6600", "#ff6600", "#A3E496", "#A3E496", 
 
 var flipCard =[];
 var clicks = 0;
-// function shuffleCards(){
-//   Array.prototype.shuffle = function(){
-//
-//   }
-// }
+function shuffleCards(){
+  Array.prototype.shuffle = function(){
+
+  };
+}
 
 // var cards = ["red", "blue", "green", "blue", "red", "green"];
 
 // 1. 'select' the correct square element
 var elements = document.querySelectorAll(".cards");
-
-
+var colorEven;
+var colorOdd;
+var firstCardOfPair;
+var secondCardOfPair;
+var currentCard;
 for (var i = 0; i < elements.length; i++) {
   elements[i].setAttribute("name", colors[i]);
   elements[i].addEventListener("click", showCard);
 }
 
+// <div name="whatever" id="something">
+// this.getAttribute("name")
+//
 
 function showCard(){
   var bgColor = this.getAttribute("name");
+  var id=this.getAttribute("id");
   this.style.background = bgColor;
+  if(clicks % 2 === 0) {
+    colorEven = bgColor;
+    firstCardOfPair = id;
+  }
+  else {
+    colorOdd = bgColor;
+    secondCardOfPair = id;
+  }
+  if(clicks % 2 !== 0){
+    if(colorEven !== colorOdd) {
+      var delay = 700; // mis-matched cards flip back over after 1 secondbox
+      console.log("It's a mismatch")
+      setTimeout(function(){
+        document.getElementById(firstCardOfPair).style.background = '#263238';
+        document.getElementById(secondCardOfPair).style.background = '#263238';
+      }, delay);
+    }else{
+      console.log("It's a match!")
+    }
+  }
   clicks++;
   console.log(clicks);
 }
 
-if(clicks % 2 == 0) {
-  colorEven = background;
-}
-else {
-  colorOdd = background;
-  firstCardOfPair =
-}
 // var firstbox = document.querySelector("#c0");
 //
 // firstbox.addEventListener("click", function() {
@@ -112,14 +132,7 @@ else {
 //
 // // 2. change the textContent of the element to be the first color
 // // elements.textContent =  cards[1];
-//
-// //
-// // color.sort function() {
-// //   if (() > 0.5 ) return 1;
-// //   else {
-// //     return -1;
-// //   }
-// // });
+
 // // //click cards.
 // // var clickCard = document.querySelectorAll(".card");
 // // cosole.log("clickCard");
