@@ -3,6 +3,10 @@ body {
   display: block;
   margin:8px;
 }
+/*
+suggest putting a blank line between each set of rules for elements (e.g.)
+where this comment is
+*/
 h1, h3 {
   text-align: center;
   margin:auto;
