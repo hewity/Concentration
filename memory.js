@@ -1,3 +1,9 @@
+// recommend adding line breaks to code if it goes past ~80 characters, like so:
+
+// var colors = [ "#01579b", "#01579b", "#ff6600", "#ff6600", "#A3E496",
+// "#A3E496", "#303f9f", "#303f9f", "#FFCC33", "#FFCC33", "#C51162", "#C51162",
+// "#33691e", "#33691e", "#CC6699", "#CC6699", "#51041B", "#51041B" , "#3e2723",
+// "#3e2723"];
 var colors = ["#01579b", "#01579b", "#ff6600", "#ff6600", "#A3E496", "#A3E496", "#303f9f", "#303f9f", "#FFCC33", "#FFCC33", "#C51162", "#C51162", "#33691e", "#33691e", "#CC6699", "#CC6699", "#51041B", "#51041B" , "#3e2723", "#3e2723"];
 
 
@@ -13,6 +19,7 @@ var currentCard;
 
 shuffle(colors);
 
+// nice job here!
 function game() {
   for (var i = 0; i < elements.length; i++) {
     elements[i].setAttribute("name", colors[i]);
@@ -27,6 +34,9 @@ game();
 
 function showCard(){
   var bgColor = this.getAttribute("name");
+  // instead of storing the id of card elements and then finding those same
+  // elements by ID later on, you could just store the card elements here.
+
   var id=this.getAttribute("id");
   this.style.background = bgColor;
   if(clicks % 2 === 0) {
@@ -69,6 +79,9 @@ var resetButton = document.querySelector("#shuffle");
 resetButton.addEventListener("click", resetGame );
 
 /// make a function resetGame
+// indentation needs to be fixed here!
+// and you know this, but the code below doesn't quite work... I'd add a comment
+// clarifying that so you remember when you come back to it.
 function resetGame() {
 game();
 document.getElementById(firstCardOfPair).style.background = '#263238';
