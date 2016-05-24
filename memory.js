@@ -16,10 +16,13 @@ shuffle(colors);
 //assigning a color to each card and puted it in eventlistner to show card
 function game() {
   for (var i = 0; i < elements.length; i++) {
+    elements[i].style.background = '#263238';
     elements[i].setAttribute("name", colors[i]);
     elements[i].addEventListener("click", showCard);
   }
+
 }
+
 game();
 
 // <div name="whatever" id="something">
